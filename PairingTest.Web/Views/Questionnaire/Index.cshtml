@@ -1,0 +1,14 @@
+﻿@model PairingTest.Web.Models.QuestionnaireViewModel
+
+<html>
+    <head>
+        <title>@Model.QuestionnaireTitle</title>
+    </head>
+    <body>
+        @foreach (var item in Model.QuestionsText)
+        {
+            <div>@item</div>
+            <textarea placeholder="Enter answer here..."></textarea>
+        }
+    </body>
+</html>
